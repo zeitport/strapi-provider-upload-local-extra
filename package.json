@@ -1,0 +1,51 @@
+{
+    "name": "strapi-provider-upload-local-extra",
+    "version": "0.1.0",
+    "description": "Configurable local provider for strapi upload",
+    "keywords": [
+        "upload",
+        "strapi"
+    ],
+    "license": "MIT",
+    "main": "./lib",
+    "directories": {
+        "lib": "./lib"
+    },
+    "scripts": {
+        "lint": "eslint ./lib ./tests",
+        "fix": "eslint ./lib ./tests --fix",
+        "test": "mocha tests/**/*Test.js",
+        "auto-changelog": "^2.2.1",
+        "eslint": "^8.0.0"
+    },
+    "devDependencies": {
+        "auto-changelog": "^2.2.1",
+        "chai": "^4.3.4",
+        "dirty-chai": "^2.0.1",
+        "eslint": "^8.0.0",
+        "mocha": "^9.1.3",
+        "sinon": "^12.0.1",
+        "sinon-chai": "^3.7.0"
+    },
+    "dependencies": {
+        "@strapi/utils": "4.0.3",
+        "fs-extra": "^10.0.0",
+        "nanoid": "^3.1.30"
+    },
+    "engines": {
+        "node": ">=12.22.0 <=16.x.x",
+        "npm": ">=6.0.0"
+    },
+    "contributingGuide": {
+        "commitTags": {
+            "Fix": "for a bug fix",
+            "Update": "either for a backwards-compatible enhancement or for a rule change that adds reported problems.",
+            "New": "implemented a new feature.",
+            "Breaking": "for a backwards-incompatible enhancement or feature.",
+            "Docs": "changes to documentation only.",
+            "Build": "changes to build process only.",
+            "Upgrade": "for a dependency upgrade.",
+            "Chore": "for refactoring, adding tests, etc. (anything that isn't user-facing)."
+        }
+    }
+}
