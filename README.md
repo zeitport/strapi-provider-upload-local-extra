@@ -1,7 +1,7 @@
-[![NPM version](https://img.shields.io/npm/v/eslint-plugin-json-es.svg)](https://www.npmjs.com/package/eslint-plugin-json-es)
-[![CI status](https://github.com/zeitport/eslint-plugin-json/workflows/CI/badge.svg?branch=main&event=push)](https://github.com/zeitport/eslint-plugin-json/actions?query=workflow%3ACI)
-[![CodeQL](https://github.com/zeitport/eslint-plugin-json-es/workflows/CodeQL/badge.svg)](https://github.com/zeitport/eslint-plugin-json/actions?query=workflow%3ACodeQL)
-[![Downloads](https://img.shields.io/npm/dm/eslint-plugin-json-es.svg)](https://www.npmjs.com/package/eslint-plugin-json-es)
+[![NPM version](https://img.shields.io/npm/v/strapi-provider-upload-local-extra.svg)](https://www.npmjs.com/package/strapi-provider-upload-local-extra)
+[![CI status](https://github.com/zeitport/strapi-provider-upload-local-extra/workflows/CI/badge.svg?branch=main&event=push)](https://github.com/zeitport/strapi-provider-upload-local-extra/actions?query=workflow%3ACI)
+[![CodeQL](https://github.com/zeitport/strapi-provider-upload-local-extra/workflows/CodeQL/badge.svg)](https://github.com/zeitport/strapi-provider-upload-local-extra/actions?query=workflow%3ACodeQL)
+[![Downloads](https://img.shields.io/npm/dm/strapi-provider-upload-local-extra.svg)](https://www.npmjs.com/package/strapi-provider-upload-local-extra)
 
 # strapi-provider-upload-local-extra
 
