@@ -1,4 +1,5 @@
 [![NPM version](https://img.shields.io/npm/v/strapi-provider-upload-local-extra.svg)](https://www.npmjs.com/package/strapi-provider-upload-local-extra)
+[![Strapi](https://img.shields.io/badge/strapi-%3E4.0.0-blue?style=flat-square)](https://strapi.io/)
 [![CI status](https://github.com/zeitport/strapi-provider-upload-local-extra/workflows/CI/badge.svg?branch=main&event=push)](https://github.com/zeitport/strapi-provider-upload-local-extra/actions?query=workflow%3ACI)
 [![CodeQL](https://github.com/zeitport/strapi-provider-upload-local-extra/workflows/CodeQL/badge.svg)](https://github.com/zeitport/strapi-provider-upload-local-extra/actions?query=workflow%3ACodeQL)
 [![Downloads](https://img.shields.io/npm/dm/strapi-provider-upload-local-extra.svg)](https://www.npmjs.com/package/strapi-provider-upload-local-extra)
