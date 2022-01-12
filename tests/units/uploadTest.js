@@ -1,6 +1,6 @@
 const {expect} = require('../sandbox.js');
 
-const plugin = require('../../lib/index.js');
+const provider = require('../../lib/index.js');
 const {PayloadTooLargeError} = require('@strapi/utils/lib/errors.js');
 const fs = require('fs-extra');
 
@@ -11,7 +11,7 @@ describe('upload()', function () {
 
     describe('file', function() {
         it('writes the file to disk', async function() {
-            const {upload} = plugin.init();
+            const {upload} = provider.init();
             const file = createTestImageFile();
 
             await upload(file);
@@ -21,7 +21,7 @@ describe('upload()', function () {
         });
 
         it('updates the "url" property of the file object', async function() {
-            const {upload} = plugin.init();
+            const {upload} = provider.init();
             const file = createTestImageFile();
 
             await upload(file);
@@ -30,7 +30,7 @@ describe('upload()', function () {
         });
 
         it.skip('updates the "hash" property with the file url', async function() {
-            const {upload} = plugin.init();
+            const {upload} = provider.init();
             const file = createTestImageFile();
 
             await upload(file);
@@ -41,7 +41,7 @@ describe('upload()', function () {
 
     describe('with sizeLimit', function () {
         it('throws an error when the file is too large', async function () {
-            const {upload} = plugin.init({sizeLimit: 10});
+            const {upload} = provider.init({sizeLimit: 10});
             const file = {
                 size: 1000
             };

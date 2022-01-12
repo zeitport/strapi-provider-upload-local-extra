@@ -1,6 +1,6 @@
 const {expect} = require('../sandbox.js');
 
-const plugin = require('../../lib/index.js');
+const provider = require('../../lib/index.js');
 const fs = require('fs-extra');
 
 describe('delete()', function () {
@@ -10,7 +10,7 @@ describe('delete()', function () {
 
     describe('file', function() {
         it('unlinks the file', async function() {
-            const api = plugin.init();
+            const api = provider.init();
             const file = createTestImageFile();
 
             await api.upload(file);
