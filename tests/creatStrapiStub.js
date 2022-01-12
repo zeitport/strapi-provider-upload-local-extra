@@ -3,7 +3,7 @@
 function createStrapiStub() {
     global.strapi = {
         dirs: {
-            public: '/'
+            public: './'
         }
     };
 }

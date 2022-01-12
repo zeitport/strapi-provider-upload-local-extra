@@ -1,53 +1,41 @@
-const {expect, sinon} = require('../sandbox.js');
+const {expect} = require('../sandbox.js');
 
 const plugin = require('../../lib/index.js');
 const {PayloadTooLargeError} = require('@strapi/utils/lib/errors.js');
-
 const fs = require('fs-extra');
-const path = require('path');
-
-sinon.stub(fs, 'writeFile').resolves();
 
 describe('upload()', function () {
-    const uniqueId = 'unique-id';
-
-    /**
-     * @type {Partial<PluginOptions>}
-     */
-    const testOptions = {
-        createUniqueId: () => uniqueId
-    };
 
     beforeEach(function () {
     });
 
     describe('file', function() {
         it('writes the file to disk', async function() {
-            const {upload} = plugin.init(testOptions);
+            const {upload} = plugin.init();
             const file = createTestImageFile();
 
             await upload(file);
 
-            const expectedPath = path.normalize(`/uploads/${uniqueId}.jpeg`);
+            const expectedPath = `./uploads/${file.hash}${file.ext}`;
             expect(fs.writeFile.firstCall.args[0]).to.equal(expectedPath);
         });
 
         it('updates the "url" property of the file object', async function() {
-            const {upload} = plugin.init(testOptions);
+            const {upload} = plugin.init();
             const file = createTestImageFile();
 
             await upload(file);
 
-            expect(file.url).to.deep.equal(`/uploads/${uniqueId}${file.ext}`);
+            expect(file.url).to.deep.equal(`uploads/${file.hash}${file.ext}`);
         });
 
-        it('updates the "hash" property with the file path', async function() {
-            const {upload} = plugin.init(testOptions);
+        it.skip('updates the "hash" property with the file url', async function() {
+            const {upload} = plugin.init();
             const file = createTestImageFile();
 
             await upload(file);
 
-            expect(file.hash).to.deep.equal(`${uniqueId}`);
+            expect(file.hash).to.deep.equal(`uploads/${file.hash}${file.ext}`);
         });
     });
 
