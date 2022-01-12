@@ -23,9 +23,6 @@
         "fs-extra": "^10.0.0",
         "nanoid": "^3.1.30"
     },
-    "peerDependencies": {
-        "@strapi/strapi": "^4.0.0"
-    },
     "devDependencies": {
         "auto-changelog": "^2.2.1",
         "chai": "^4.3.4",
