@@ -26,7 +26,7 @@ describe('upload()', function () {
 
             await upload(file);
 
-            expect(file.url).to.deep.equal(`uploads/${file.hash}${file.ext}`);
+            expect(file.url).to.deep.equal(`/uploads/${file.hash}${file.ext}`);
         });
 
         it.skip('updates the "hash" property with the file url', async function() {
