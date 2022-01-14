@@ -4,5 +4,5 @@
     "unreleased": true,
     "startingVersion": "v1.0.0",
     "commitLimit": false,
-    "ignoreCommitPattern": "(?:README)|(?:Build)|(?:Chore)"
+    "ignoreCommitPattern": "(?:README)|(?:Build)|(?:Chore)|(?:Docs)"
 }
