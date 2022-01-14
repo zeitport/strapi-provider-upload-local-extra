@@ -1,6 +1,6 @@
 {
     "name": "strapi-provider-upload-local-extra",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Configurable local provider for strapi upload",
     "keywords": [
         "upload",
