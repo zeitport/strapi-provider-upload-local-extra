@@ -15,7 +15,7 @@
         "lint": "eslint ./lib ./tests",
         "fix": "eslint ./lib ./tests --fix",
         "test": "mocha tests/**/*Test.js",
-        "auto-changelog": "^2.2.1",
+        "changelog": "auto-changelog",
         "eslint": "^8.0.0"
     },
     "dependencies": {
